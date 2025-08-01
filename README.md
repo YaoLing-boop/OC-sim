@@ -3,8 +3,7 @@ OC-sim is a group of functions designed to generate Observed-Calculated (O-C) di
 
 
 
-
-
+Here is an example output:
 <img width="400" height="300" alt="github" src="https://github.com/user-attachments/assets/52c4013b-2a39-4152-81ed-8c880bfb99fa" />
 
 
