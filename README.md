@@ -1,7 +1,7 @@
 # OC-sim
-OC-sim is a group of functions designed to generate Observed-Calculated (O-C) diagram data for pulsating stars experiencing circular reflex motion, and inferring a rate of period change by fitting a parabola to the O-C diagram. It first simulates light curves of a variable star orbitted by a companion, assuming circular orbits and no transits. These lightcurves are fed into [Pyriod](https://github.com/keatonb/Pyriod/), which fits sinusoidal models to the simulated lightcurves, and subsequently returns time delays measured from phase variations (with uncertainties). This represents the O-C data, and a constant rate of period change can be calculated from a parabolic fit.
+OC-sim is a group of functions designed for generating Observed-Calculated (O-C) diagram data for pulsating variable stars experiencing circular reflex motion, and inferring a rate of period change by fitting a parabola to their O-C diagram. It first simulates light curves of a variable star experience Doppler-induced phase variations from a circular orbit with a companion. These simulated light curves are fed into [Pyriod](https://github.com/keatonb/Pyriod/), which fits sinusoidal models to the data, and subsequently returns time delays measured from phase variations (with uncertainties). This represents the O-C data, and a constant rate of period change can be inferred from a parabolic fit.
 
-This code was written as part of the published work "Gravitational Influence from Planets on the Measured Rates of Period Change of Pulsating White Dwarfs" by Ling Xuan Yao, Keaton J. Bell, & Andrew Dublin, 2025 (The Astrophysical Journal, in press).
+This code was written as part of the published work ["Gravitational Influence from Planets on the Measured Rates of Period Change of Pulsating White Dwarfs" by Ling Xuan Yao, Keaton J. Bell, & Andrew Dublin (2025 The Astrophysical Journal, in press; arXiv:2508.14195)](https://ui.adsabs.harvard.edu/abs/arXiv:2508.14195). In this work, we quantify reflex motion from undetected companions as an important source of extrinsic error in efforts to measure intrinsic rates of pulsation period change.
 
 The main function is `analyze_reflex_OC`
 
@@ -34,7 +34,8 @@ Returns:
     A pandas DataFrame with measured rate of period change based on parabolic fit to O-C diagram.
 ```
 
-Here is an example output from `analyze_reflex_OC(nobs = 580)`:
+Here is an example output from `analyze_reflex_OC(nobs = 580)` 
+(otherwise default values given above):
 
 <img width="400" height="300" alt="github" src="https://github.com/user-attachments/assets/52c4013b-2a39-4152-81ed-8c880bfb99fa" />
 
